@@ -1,0 +1,86 @@
+import {StyleSheet} from 'react-native';
+import {colors, fontSize, sizes} from '../../services';
+export const styles = StyleSheet.create({
+  landingBg: {
+    height: sizes.screenHeight,
+    width: sizes.screenWidth,
+  },
+  landingBgIOS: {
+    height: sizes.screenHeight * 0.94,
+    width: sizes.screenWidth,
+  },
+  mainContainer: {
+    alignItems: 'center',
+    width: sizes.screenWidth,
+    height: sizes.screenHeight,
+    position: 'absolute',
+    paddingTop: sizes.screenHeight * 0.42,
+  },
+  mainContainerIOS: {
+    alignItems: 'center',
+    width: sizes.screenWidth,
+    height: sizes.screenHeight,
+    position: 'absolute',
+    paddingTop: sizes.screenHeight * 0.46,
+  },
+  headingLight: {
+    fontFamily: 'Inter-Regular',
+    fontSize: fontSize.h3,
+    color: colors.darkBlue,
+    alignSelf: 'center',
+  },
+  heading: {
+    fontFamily: 'Inter-Bold',
+    fontSize: fontSize.h3,
+    color: colors.darkBlue,
+    alignSelf: 'center',
+    fontWeight: '600',
+  },
+  signInBtn: {
+    backgroundColor: colors.darkBlue,
+    width: sizes.screenWidth * 0.86,
+    height: sizes.screenHeight * 0.08,
+    borderRadius: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 2,
+    borderColor: colors.white,
+    shadowColor: colors.darkBlue,
+    elevation: 12,
+    marginBottom: sizes.screenHeight * 0.04,
+    marginTop: sizes.screenHeight * 0.12,
+  },
+  signInBtnText: {
+    fontFamily: 'Inter-SemiBold',
+    fontSize: fontSize.medium,
+    color: colors.white,
+    fontWeight: '500',
+  },
+  createAccBtn: {
+    backgroundColor: colors.backgroundColor,
+    width: sizes.screenWidth * 0.86,
+    height: sizes.screenHeight * 0.076,
+    borderRadius: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 2,
+    borderColor: colors.white,
+    shadowColor: colors.darkBlue,
+    elevation: 12,
+  },
+  createAccBtnText: {
+    fontFamily: 'Inter-SemiBold',
+    fontSize: fontSize.large,
+    color: colors.darkBlue,
+    fontWeight: '500',
+  },
+  socialIconRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    top: sizes.screenHeight * 0.02,
+  },
+  socialIcon: {
+    height: sizes.screenHeight * 0.12,
+    width: sizes.screenHeight * 0.12,
+  },
+});
